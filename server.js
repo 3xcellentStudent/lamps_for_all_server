@@ -221,7 +221,7 @@ const data = {
   ],
 }
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   try {
     console.log(`Server started on PORT: ${PORT}`)
   } catch(err){console.log('Server dont start', err)}
