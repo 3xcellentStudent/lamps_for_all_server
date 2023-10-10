@@ -20,8 +20,11 @@ router.post(PRODUCTS_ID, async (req, res) => {
 router.post(CREATE_PAYMENT, async (req, res) => {
   const {body: data} = req
   const transaction = await createTransaction(data)
-  console.log(transaction)
   return res.json(transaction)
+})
+
+router.get('/interceptor', (req, res) => {
+  console.log(req)
 })
 
 module.exports = router

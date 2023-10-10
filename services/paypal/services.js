@@ -8,10 +8,13 @@ class Sevices{
         else resolve(payment)
       })
     }).then(data => data)
+    // console.log(result)
     return result
   }
 
-  static async executeTransaction(){}
+  static async executeTransaction(){
+    // paypal.payment.execute()
+  }
 }
 
 module.exports = Sevices
